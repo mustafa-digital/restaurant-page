@@ -1,0 +1,178 @@
+
+:root {
+    /* --header-height: 75px; */
+}
+
+* {
+    padding : 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa;
+    font-size: 24px;
+    font-family: sans-serif;
+    overflow: hidden;
+    color: #3b82f6;
+    display: grid;
+    grid-template-columns: 30vw 1fr;
+    grid-template-rows: 100vh;
+}
+
+.home-page {
+    align-items: center;
+}
+
+.home-intro {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 200px 50px 1fr;
+    align-items: start;
+    justify-items: center;
+    gap: 20px;
+
+    padding: 40px;
+}
+
+.home-intro-title,
+.home-intro-content {
+    color: #3b82f6;
+}
+
+.home-intro-title {
+    position: relative;
+    font-size: 2.5em;
+    line-height: 0.9em;
+    width: 350px;
+    text-align: center;
+    align-self: center;
+}
+
+.home-wave-img {
+    position: absolute;
+    transform: scale(2);
+}
+
+.wave-1 {
+    top: 45px;
+    left: 35vw;
+}
+
+.wave-2 {
+    transform: scale(2) rotate(180deg);
+    bottom: 45px;
+    right: 90px;
+}
+
+
+.home-intro-title::after {
+    content: "DIVE IN!";
+    color: #1e40af;
+    transform: rotate(15deg);
+    cursor: text;
+    pointer-events: visible;
+}
+
+.home-intro-content {
+    width: 500px;
+    text-align: center;
+}
+
+.order-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 75px 1fr;
+    align-items: center;
+    justify-items: center;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.order-online-text {
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 1em;
+    color: #1e40af;
+    font-weight: bold;
+}
+
+.order-link-logo {
+    height: 150px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.doordash-logo {
+    width: 300px;
+}
+
+.home-food-img {
+    height: 400px;
+    width: auto;
+}
+
+.home-side-div {
+    background-image: url("./assets/pattern-7175760.svg");
+    background-size: cover;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.home-side-title {
+    position: relative;
+    right: -25px;
+    background: #1e40af;
+    color: white;
+    height: 100px;
+    width: 400px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px #343434;
+}
+
+.home-side-title::before {
+    position: absolute;
+    left: -425px;
+    content: url("./assets/plow-7565062_640-veed-remove-background.png");
+    zoom: 25%;
+    display: inline;
+}
+
+.home-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: start;
+    padding-top: 50px;
+    gap: 35px;
+}
+
+.nav-btn {
+    height: 50px;
+    width: 125px;
+    background: #1e40af;
+    color: white; 
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #343434;
+}
+
+.menu-page {
+    background-color: #fafafa;
+    height: 100%;
+}

@@ -1,11 +1,12 @@
-import "./style.css";
-import { createMenuTab } from "./menu";
-import seafoodImgSrc from "./assets/crab-7144038.svg";
 import uberEatsImgSrc from "./assets/uber-eats-logo.png";
 import doorDashImgSrc from "./assets/doordash-logo.png";
 import waveImgSrc from "./assets/wave4.svg";
 
 export function createHomeTab() {
+    // clear the current tab
+    const contentDiv = document.getElementById("content");
+    contentDiv.textContent = "";
+
     const div = document.getElementById("content");
     div.setAttribute("class", "home-page");
 

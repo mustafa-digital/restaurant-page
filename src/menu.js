@@ -74,7 +74,7 @@ function createFACMenu() {
         // set new menu title
         menuTitle.textContent = "Fish and Chips";
 
-        // create menu item divs
+        // create menu items and add them to the menu list section
         menuList.appendChild(createMenuItem("Haddock (1 Pc)", "10.49"));
         menuList.appendChild(createMenuItem("Haddock (2 Pc)", "14.99"));
         menuList.appendChild(createMenuItem("Cod (1 Pc)", "14.49"));
@@ -107,7 +107,7 @@ function createCombosMenu() {
         // set new menu title
         menuTitle.textContent = "Seafood Combos";
 
-        // create menu item divs
+        // create menu items and add them to the menu list section
         menuList.appendChild(createMenuItem("Shrimp Platter", "18.99", "10 pieces of grilled shrimp on a plate of fried rice"));
         menuList.appendChild(createMenuItem("Seafood Sampler", "27.99", "2 pieces of your choice of fish, 5 pieces of shrimp, and any 2 appetizers"));
     }
@@ -133,6 +133,7 @@ function createSandwichMenu() {
          // set new menu title
          menuTitle.textContent = "Sandwiches & Burgers";
 
+        // create menu items and add them to the menu list section
         menuList.appendChild(createMenuItem("Fish Burger", "15.25", "Breaded haddock with lettuce, tomato and mayo"));
         menuList.appendChild(createMenuItem("Chicken Breast Burger", "12.29", "Grilled chicken breast with lettuce and tomato on a sesame bun"));
         menuList.appendChild(createMenuItem("Shrimp Wrap", "12.49", "Breaded shrimp with lettuce, pickles and tartar sauce in a pita wrap"));
